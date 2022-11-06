@@ -12,12 +12,5 @@ public class TimeTablePage {
 
     //Methods
     WebDriver driver = new ChromeDriver();
-    public String getDepartFromAndArriveAt(String departFrom, String arriveAt){
-        String text = "//td[text()='%s']//following-sibling::td[text()='%s']//following-sibling::td//a[text()='book ticket']";
-        return String.format(text, departFrom, arriveAt);
-    }
-
-    public void bookTicketFromTimeTablePage(String departFrom, String arriveAt){
-        driver.findElement(By.xpath(getDepartFromAndArriveAt(departFrom,arriveAt))).click();
-    }
+    
 }
