@@ -11,35 +11,26 @@ public class MyTicketPage {
     private final By selArriveStation = By.name("FilterArStation");
     private final By txtDepartDate = By.name("FilterDpDate");
     private final By btnApplyFilter = By.xpath("//input[@value='Apply Filter']");
-    private final By lblErrorMessage = By.xpath("//div[@class='error message']");
-    private final By lblNoteMessage = By.xpath("//div[@class='message']//li");
 
     //Elements
     WebDriver driver = new ChromeDriver();
 
-    protected WebElement getCancelElement() {
+    private WebElement getCancelElement() {
         return driver.findElement(btnCancel);
     }
 
-    protected WebElement getArriveStationElement() {
+    private WebElement getArriveStationElement() {
         return driver.findElement(selArriveStation);
     }
 
-    protected WebElement getDepartDateElement() {
+    private WebElement getDepartDateElement() {
         return driver.findElement(txtDepartDate);
     }
 
-    protected WebElement getApplyFilterElement() {
+    private WebElement getApplyFilterElement() {
         return driver.findElement(btnApplyFilter);
     }
 
-    protected WebElement getErrorMessageElement() {
-        return driver.findElement(lblErrorMessage);
-    }
-
-    protected WebElement getNoteMessageElement() {
-        return driver.findElement(lblNoteMessage);
-    }
 
     //Methods
 
