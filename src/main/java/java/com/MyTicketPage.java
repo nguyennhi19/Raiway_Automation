@@ -8,9 +8,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class MyTicketPage {
     //Locators
     private By btnCancel = By.xpath("//input[@value='Cancel']");
-    private final By selArriveStation = By.name("FilterArStation");
-    private final By txtDepartDate = By.name("FilterDpDate");
-    private final By btnApplyFilter = By.xpath("//input[@value='Apply Filter']");
+    private By selArriveStation = By.name("FilterArStation");
+    private By txtDepartDate = By.name("FilterDpDate");
+    private By btnApplyFilter = By.xpath("//input[@value='Apply Filter']");
 
     //Elements
     WebDriver driver = new ChromeDriver();
