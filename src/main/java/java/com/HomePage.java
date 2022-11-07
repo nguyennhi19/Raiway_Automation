@@ -12,4 +12,5 @@ public class HomePage {
     WebDriver driver = new ChromeDriver();
     public void open() {
         driver.navigate().to(RAILWAY_URL);
+    }
 }
