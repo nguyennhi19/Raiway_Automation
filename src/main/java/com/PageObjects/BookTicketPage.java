@@ -1,4 +1,4 @@
-package java.com;
+package com.PageObjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,36 +7,35 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BookTicketPage {
     //Locator
-    private By SelectDate = By.xpath("//select[@name='Date']");
-    private By SelectDepartFrom = By.xpath("//select[@name='DepartStation']");
-    private By SelectArriverAt = By.xpath("//select[@name='ArriveStation']");
-    private By SelectSeatType = By.xpath("//select[@name='SeatType']");
-    private By SelectTicketAmount = By.xpath("//select[@name='TicketAmount']");
-    private By btnLBookTicket = By.xpath("//input[@value='Book ticket']");
+    private By _selectDate = By.xpath("//select[@name='Date']");
+    private By _selectDepartFrom = By.xpath("//select[@name='DepartStation']");
+    private By _selectArriverAt = By.xpath("//select[@name='ArriveStation']");
+    private By _selectSeatType = By.xpath("//select[@name='SeatType']");
+    private By _selectTicketAmount = By.xpath("//select[@name='TicketAmount']");
+    private By _btnLBookTicket = By.xpath("//input[@value='Book ticket']");
 
     //Elements
     WebDriver driver = new ChromeDriver();
 
     private WebElement getSelectDate(){
-        return driver.findElement(SelectDate);
+        return driver.findElement(_selectDate);
     }
-
     private WebElement getSelectDepartFrom(){
-        return driver.findElement(SelectDepartFrom);
+        return driver.findElement(_selectDepartFrom);
     }
     private WebElement getSelectArriverAt(){
-        return driver.findElement(SelectArriverAt);
+        return driver.findElement(_selectArriverAt);
     }
 
     private WebElement getSelectSeatType(){
-        return driver.findElement(SelectSeatType);
+        return driver.findElement(_selectSeatType);
     }
     private WebElement getSelectTicketAmount(){
-        return driver.findElement(SelectTicketAmount);
+        return driver.findElement(_selectTicketAmount);
     }
 
     private WebElement getBtnBookTicket(){
-        return driver.findElement(btnLBookTicket);
+        return driver.findElement(_btnLBookTicket);
     }
 
     //Methods

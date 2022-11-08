@@ -1,4 +1,4 @@
-package java.com;
+package com.PageObjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LoginPage {
-    //Locator
+    //Locator1234567890
     private By txtEmail = By.xpath("//input[@id=\"username\"]");
     private By txtPassword = By.xpath("//input[@id=\"password\"]");
     private By btnLogin = By.xpath("//input[@value=\"Login\"]");

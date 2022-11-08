@@ -1,4 +1,4 @@
-package java.com;
+package com.PageObjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +11,7 @@ public class GeneralPage {
     private final By tabLogin = By.linkText("Login");
     private final By tabLogout = By.linkText("Log out");
     private final By tabBookTicket = By.linkText("Book ticket");
-    private final By tabContact = By.linkText("Contact");
+    private final  By tabContact = By.linkText("Contact");
     private final By tabRegister = By.linkText("Register");
     private final By tabChangePassword = By.linkText("Change password");
     private final By tabTimeTable = By.linkText("Timetable");
@@ -22,39 +22,39 @@ public class GeneralPage {
 
     WebDriver driver = new ChromeDriver();
 
-    protected WebElement getTabLogin() {
+    private WebElement getTabLogin() {
         return driver.findElement(tabLogin);
     }
 
-    protected WebElement getTabLogout() {
+    private WebElement getTabLogout() {
         return driver.findElement(tabLogout);
     }
 
-    protected WebElement getTabBookTicket() {
+    private WebElement getTabBookTicket() {
         return driver.findElement(tabBookTicket);
     }
 
-    protected WebElement getTabContact() {
+    private WebElement getTabContact() {
         return driver.findElement(tabContact);
     }
 
-    protected WebElement getTabRegister() {
+    private WebElement getTabRegister() {
         return driver.findElement(tabRegister);
     }
 
-    protected WebElement getTabChangePassword() {
+    private WebElement getTabChangePassword() {
         return driver.findElement(tabChangePassword);
     }
 
-    protected WebElement getTabTimetable() {
+    private WebElement getTabTimetable() {
         return driver.findElement(tabTimeTable);
     }
 
-    protected WebElement getTabMyTicket() {
+    private WebElement getTabMyTicket() {
         return driver.findElement(tabMyTicket);
     }
 
-    protected WebElement getWelcomeUserElement() {
+    private WebElement getWelcomeUserElement() {
         return driver.findElement(lblWelcomeUser);
     }
 
