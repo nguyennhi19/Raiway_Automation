@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TimeTablePage {
-    // Locators
+    // Locators1234567890
     private By btnCheckPrice = By.xpath("//td[text()='%s']//following-sibling::td[text()='%s']//following-sibling::td//a[text()='check price']");
     private By btnBookTicket = By.xpath("//td[text()='%s']//following-sibling::td[text()='%s']//following-sibling::td//a[text()='book ticket']");
     //Elements
